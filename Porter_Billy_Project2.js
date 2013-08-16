@@ -46,9 +46,28 @@ var storeCheck = function(allStores) {
     return numStores;
 };
 
+// Array Function
+var storeOrder = function(nameStore) {
+    
+    var done;
+    
+    for (var i = 0; i < nameStore; i++){
+        console.log("I just visted " + myStores[i] + ".");
+        
+        if (i < nameStore){
+             console.log("One more store down.");
+        } else {
+            console.log("I checked all stores.");
+        }
+        done = myStores.toString();
+    }
+    return done;
+};
 
 //main code
 var researchDone = myResearch(research);
 var totalStores = storeCheck(myStores.length);
 console.log(totalStores);
+var checked = storeOrder(myStores.length);
+console.log(checked);
 
