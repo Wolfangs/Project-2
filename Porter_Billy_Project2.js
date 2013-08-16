@@ -77,6 +77,19 @@ var myCash = function(buyIt) {
     return itsMine;
 };
 
+//String Function
+var bigScreen = function(boughtIt) {
+    
+    var myString;
+    
+    if (boughtIt == "Samsung"){
+        myString = "Put my new " + newTele + " television in the truck.";
+    } else {
+        myString = "Take it back to the store.";
+    }
+    return myString;
+};
+
 //main code
 var researchDone = myResearch(research);
 var totalStores = storeCheck(myStores.length);
@@ -85,3 +98,5 @@ var checked = storeOrder(myStores.length);
 console.log(checked);
 var budget = myCash(myBudget);
 console.log(budget);
+var string = bigScreen(newTele);
+console.log(string);
