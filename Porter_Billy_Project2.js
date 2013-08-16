@@ -20,7 +20,7 @@ console.log ("It is " + research + " that I have done my research.");
 var myResearch = function(research) {
     
     if (research == true) {
-        console.log("It is ok to procede to the next step.");
+        console.log("It is ok to proceed to the next step.");
     } else {
         console.log("What were you thinking?");
     }
@@ -64,10 +64,24 @@ var storeOrder = function(nameStore) {
     return done;
 };
 
+//Boolean Function
+var myCash = function(buyIt) {
+    
+    var itsMine;
+    
+    if (buyIt == myCash === false){
+        itsMine = true;
+    } else {
+        itsMine = false;
+    }
+    return itsMine;
+};
+
 //main code
 var researchDone = myResearch(research);
 var totalStores = storeCheck(myStores.length);
 console.log(totalStores);
 var checked = storeOrder(myStores.length);
 console.log(checked);
-
+var budget = myCash(myBudget);
+console.log(budget);
