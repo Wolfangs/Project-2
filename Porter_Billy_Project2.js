@@ -17,7 +17,6 @@ console.log ("I'm going to check at " + myStores.length + " different stores for
 console.log ("It is " + research + " that I have done my research.");
 
 //Procedure
-
 var myResearch = function(research) {
     
     if (research == true) {
@@ -28,7 +27,28 @@ var myResearch = function(research) {
     
 };
 
+//Number Function
+var storeCheck = function(allStores) {
+    
+    var numStores;
+    
+    while (allStores > 0) {
+        
+        allStores = allStores - 1
+        
+        if (allStores > 0) {
+            console.log("There are " + allStores + " more stores to check.");
+        } else {
+            console.log("There are " + allStores + " stores left to check.");
+        }
+        numStores = allStores;
+    }
+    return numStores;
+};
+
 
 //main code
 var researchDone = myResearch(research);
+var totalStores = storeCheck(myStores.length);
+console.log(totalStores);
 
